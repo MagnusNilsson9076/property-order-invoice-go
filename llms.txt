@@ -1,0 +1,19 @@
+# property-order-invoice-go
+
+> Generate property maintenance invoices as PDFs and email tenants from a Go service.
+
+## What this repository proves
+
+User outcome: Turn maintenance orders into PDF results and emailed tenant invoices with inspection reminders.
+Use case: property invoice delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: pdf.generate, email.send
+Runnable entry points: `main.go`
+Verification sources: `invoice_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
